@@ -13,5 +13,5 @@ Because it provide many effects, you don't rework again.
 3. Done!
 
 ## DEMO ##
-https://dl.dropboxusercontent.com/u/24421764/Website/Projects/ngAnimate/index.html
+http://augus.github.io/ngAnimate/
 
