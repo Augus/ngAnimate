@@ -2,7 +2,7 @@
 ngAnimate is best effect sulotion made for AngularJS.
 
 ##Support##
-ngAnimate is only support for AngularJS 1.2 now, We use AngularJS 1.2 extra ngAnimage.js module.
+ngAnimate is only support for AngularJS 1.2 now, because it based on AngularJS 1.2 extras ngAnimage.js module.
 
 ##Why use ngAnimate?##
 Because it provide many effects, you don't rework again.
