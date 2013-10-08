@@ -1,0 +1,123 @@
+2013-10-08 19:59:53 overwrite css/style.css 
+2013-10-08 20:00:38     error sass/ng-animation.scss (Line 475: Invalid CSS after "-moz-transform": expected ";", was ": rotate(0deg)")
+2013-10-08 20:00:38 overwrite css/ng-animation.css 
+2013-10-08 20:00:38 identical css/style.css 
+2013-10-08 20:00:39     error sass/ng-animation.scss (Line 474: Invalid CSS after "-moz-transform": expected ";", was ": rotate(0deg)")
+2013-10-08 20:00:39 overwrite css/ng-animation.css 
+2013-10-08 20:00:39 identical css/style.css 
+2013-10-08 20:00:44     error sass/ng-animation.scss (Line 474: Invalid CSS after "-moz-transform": expected ";", was ": rotate(0deg)")
+2013-10-08 20:00:44 identical css/ng-animation.css 
+2013-10-08 20:00:44 identical css/style.css 
+2013-10-08 20:00:52     error sass/ng-animation.scss (Line 474: Invalid CSS after "-moz-transform": expected ";", was ": rotate(0deg)")
+2013-10-08 20:00:52 identical css/ng-animation.css 
+2013-10-08 20:00:52 identical css/style.css 
+2013-10-08 20:01:42     error sass/ng-animation.scss (Line 474: Invalid CSS after "-moz-transform": expected ";", was ": rotate(0deg)")
+2013-10-08 20:01:42 identical css/ng-animation.css 
+2013-10-08 20:01:42 identical css/style.css 
+2013-10-08 20:02:08 overwrite css/ng-animation.css 
+2013-10-08 20:02:08 identical css/style.css 
+2013-10-08 20:04:18 overwrite css/ng-animation.css 
+2013-10-08 20:04:18 identical css/style.css 
+2013-10-08 20:04:25 identical css/ng-animation.css 
+2013-10-08 20:04:25 identical css/style.css 
+2013-10-08 20:04:34 identical css/ng-animation.css 
+2013-10-08 20:04:34 identical css/style.css 
+2013-10-08 20:04:38 identical css/ng-animation.css 
+2013-10-08 20:04:39 identical css/style.css 
+2013-10-08 20:04:41 overwrite css/ng-animation.css 
+2013-10-08 20:04:41 identical css/style.css 
+2013-10-08 20:04:44 overwrite css/ng-animation.css 
+2013-10-08 20:04:44 identical css/style.css 
+2013-10-08 20:04:56 identical css/ng-animation.css 
+2013-10-08 20:04:56 identical css/style.css 
+2013-10-08 20:05:50 overwrite css/ng-animation.css 
+2013-10-08 20:05:50 identical css/style.css 
+2013-10-08 20:06:10 overwrite css/ng-animation.css 
+2013-10-08 20:06:10 identical css/style.css 
+2013-10-08 20:06:22 overwrite css/ng-animation.css 
+2013-10-08 20:06:22 identical css/style.css 
+2013-10-08 20:06:24 overwrite css/ng-animation.css 
+2013-10-08 20:06:24 identical css/style.css 
+2013-10-08 20:08:54 overwrite css/ng-animation.css 
+2013-10-08 20:08:54 identical css/style.css 
+2013-10-08 20:08:58 identical css/ng-animation.css 
+2013-10-08 20:08:58 identical css/style.css 
+2013-10-08 20:10:00 overwrite css/ng-animation.css 
+2013-10-08 20:10:00 identical css/style.css 
+2013-10-08 20:12:49     error sass/ng-animation.scss (Line 271: Invalid CSS after "...form(scale(0.7)": expected ")", was "; ) ")
+2013-10-08 20:12:49 overwrite css/ng-animation.css 
+2013-10-08 20:12:49 identical css/style.css 
+2013-10-08 20:13:26     error sass/ng-animation.scss (Line 325: Invalid CSS after "...m(rotate(90deg)": expected ")", was ";); ")
+2013-10-08 20:13:26 overwrite css/ng-animation.css 
+2013-10-08 20:13:26 identical css/style.css 
+2013-10-08 20:13:34     error sass/ng-animation.scss (Line 325: Invalid CSS after "...m(rotate(90deg)": expected ")", was "; ")
+2013-10-08 20:13:34 overwrite css/ng-animation.css 
+2013-10-08 20:13:34 identical css/style.css 
+2013-10-08 20:13:38     error sass/ng-animation.scss (Line 374: Invalid CSS after "...nsform(scale(3)": expected ")", was ";); ")
+2013-10-08 20:13:38 overwrite css/ng-animation.css 
+2013-10-08 20:13:38 identical css/style.css 
+2013-10-08 20:13:43     error sass/ng-animation.scss (Line 374: Invalid CSS after "...nsform(scale(3)": expected ")", was ";); ")
+2013-10-08 20:13:43 identical css/ng-animation.css 
+2013-10-08 20:13:43 identical css/style.css 
+2013-10-08 20:14:00     error sass/ng-animation.scss (Line 364: Invalid CSS after "...nsform(scale(3)": expected ")", was ";); ")
+2013-10-08 20:14:00 overwrite css/ng-animation.css 
+2013-10-08 20:14:00 identical css/style.css 
+2013-10-08 20:14:09     error sass/ng-animation.scss (Line 390: Invalid CSS after "...nsform(scale(3)": expected ")", was "; ) ")
+2013-10-08 20:14:09 overwrite css/ng-animation.css 
+2013-10-08 20:14:09 identical css/style.css 
+2013-10-08 20:14:16     error sass/ng-animation.scss (Line 405: Invalid CSS after "...nsform(scale(3)": expected ")", was ";); ")
+2013-10-08 20:14:16 overwrite css/ng-animation.css 
+2013-10-08 20:14:16 identical css/style.css 
+2013-10-08 20:14:22     error sass/ng-animation.scss (Line 441: Invalid CSS after "... rotateX(0deg))": expected "}", was "opacity: 1;	")
+2013-10-08 20:14:22 overwrite css/ng-animation.css 
+2013-10-08 20:14:22 identical css/style.css 
+2013-10-08 20:14:23     error sass/ng-animation.scss (Line 441: Invalid CSS after "... rotateX(0deg))": expected "}", was "opacity: 1;	")
+2013-10-08 20:14:23 identical css/ng-animation.css 
+2013-10-08 20:14:23 identical css/style.css 
+2013-10-08 20:14:35     error sass/ng-animation.scss (Line 481: Invalid CSS after "... rotateY(0deg))": expected "}", was "opacity: 1;	")
+2013-10-08 20:14:35 overwrite css/ng-animation.css 
+2013-10-08 20:14:35 identical css/style.css 
+2013-10-08 20:14:42     error sass/ng-animation.scss (Line 65: Undefined mixin 'transform'.)
+2013-10-08 20:14:42 overwrite css/ng-animation.css 
+2013-10-08 20:14:42 identical css/style.css 
+2013-10-08 20:15:54     error sass/ng-animation.scss (Line 70: Undefined mixin 'transform'.)
+2013-10-08 20:15:54 overwrite css/ng-animation.css 
+2013-10-08 20:15:54 identical css/style.css 
+2013-10-08 20:15:57 overwrite css/ng-animation.css 
+2013-10-08 20:15:57 identical css/style.css 
+2013-10-08 20:15:59 identical css/ng-animation.css 
+2013-10-08 20:15:59 identical css/style.css 
+2013-10-08 20:16:55 overwrite css/ng-animation.css 
+2013-10-08 20:16:55 identical css/style.css 
+2013-10-08 20:17:37 overwrite css/ng-animation.css 
+2013-10-08 20:17:37 identical css/style.css 
+2013-10-08 20:17:50 overwrite css/ng-animation.css 
+2013-10-08 20:17:50 identical css/style.css 
+2013-10-08 20:18:00 overwrite css/ng-animation.css 
+2013-10-08 20:18:00 identical css/style.css 
+2013-10-08 20:18:16 identical css/ng-animation.css 
+2013-10-08 20:18:16 identical css/style.css 
+2013-10-08 20:19:12 overwrite css/ng-animation.css 
+2013-10-08 20:19:12 identical css/style.css 
+2013-10-08 20:19:39 overwrite css/ng-animation.css 
+2013-10-08 20:19:39 identical css/style.css 
+2013-10-08 20:20:08 overwrite css/ng-animation.css 
+2013-10-08 20:20:08 identical css/style.css 
+2013-10-08 20:20:31 overwrite css/ng-animation.css 
+2013-10-08 20:20:31 identical css/style.css 
+2013-10-08 20:20:51 identical css/ng-animation.css 
+2013-10-08 20:20:51 identical css/style.css 
+2013-10-08 20:21:21 overwrite css/ng-animation.css 
+2013-10-08 20:21:21 identical css/style.css 
+2013-10-08 20:21:28 identical css/ng-animation.css 
+2013-10-08 20:21:28 identical css/style.css 
+2013-10-08 20:21:59 overwrite css/ng-animation.css 
+2013-10-08 20:21:59 identical css/style.css 
+2013-10-08 20:22:05 overwrite css/ng-animation.css 
+2013-10-08 20:22:05 identical css/style.css 
+2013-10-08 20:22:16 overwrite css/ng-animation.css 
+2013-10-08 20:22:16 identical css/style.css 
+2013-10-08 20:22:21 identical css/ng-animation.css 
+2013-10-08 20:22:21 identical css/style.css 
+2013-10-08 20:22:28 overwrite css/ng-animation.css 
+2013-10-08 20:22:28 identical css/style.css 

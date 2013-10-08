@@ -1,0 +1,106 @@
+/* line 1, ../sass/style.scss */
+body {
+  background-color: #fff;
+  text-align: center;
+  max-width: 560px;
+  margin: 30px auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* line 11, ../sass/style.scss */
+header {
+  font-family: 'Bad Script', cursive;
+}
+
+/* line 15, ../sass/style.scss */
+header h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #555;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 23, ../sass/style.scss */
+header small {
+  font-size: 20px;
+  color: #777;
+  font-weight: 300;
+}
+
+/* line 29, ../sass/style.scss */
+ol, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 35, ../sass/style.scss */
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #247FCC;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#248cdb), to(#247fcc));
+  background-image: -webkit-linear-gradient(top, #248cdb, #247fcc);
+  background-image: -moz-linear-gradient(top, #248cdb, #247fcc);
+  background-image: -o-linear-gradient(top, #248cdb, #247fcc);
+  background-image: -ms-linear-gradient(top, #248cdb, #247fcc);
+  background-image: linear-gradient(top, #248cdb, #247fcc);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='darken(#50a3e2, 10%)',EndColorStr='#247fcc');
+  cursor: pointer;
+}
+
+/* line 52, ../sass/style.scss */
+.btn.block {
+  display: block;
+}
+
+/* line 56, ../sass/style.scss */
+.btn.remove {
+  border: 1px solid #8B1419;
+  background-color: #D32C33;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e44e54), to(#d32c33));
+  background-image: -webkit-linear-gradient(top, #e44e54, #d32c33);
+  background-image: -moz-linear-gradient(top, #e44e54, #d32c33);
+  background-image: -o-linear-gradient(top, #e44e54, #d32c33);
+  background-image: -ms-linear-gradient(top, #e44e54, #d32c33);
+  background-image: linear-gradient(top, #e44e54, #d32c33);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#E44E54',EndColorStr='#D32C33');
+}
+
+/* line 68, ../sass/style.scss */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+/* line 78, ../sass/style.scss */
+.controls {
+  margin: 0 0 30px;
+}
+
+/* line 82, ../sass/style.scss */
+.item {
+  /*display: inline-block;*/
+  background-color: rgba(0, 187, 135, 0.75);
+  padding: 25px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: white;
+}
+
+/* line 91, ../sass/style.scss */
+.item:hover {
+  cursor: pointer;
+  background-color: rgba(0, 187, 135, 0.9);
+}
