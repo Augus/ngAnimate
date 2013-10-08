@@ -33,7 +33,7 @@
 
 	<div class="sidebar">
     <div class="btn block" ng-click="playAll(0)"><i class="icon-play-circled2"></i> Play All</div>
-		<div ng-repeat="animation in animations" class="btn block" ng-click="add(animation)">{{animation}}</div>
+		<div ng-repeat="animation in animations" class="btn block" ng-click="add(animation)" ng-class="{'active' : animation == currentAnimation}">{{animation}}</div>
 	</div>
 
   <div class="controls">

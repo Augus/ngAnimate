@@ -4,6 +4,7 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 
 	$scope.layoutMode = 0;
 	$scope.list = [];
+	$scope.currentAnimation;
 	$scope.animations = ["toggle", 
 						"spin-toggle", 
 						"slide-left", 
@@ -71,6 +72,7 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 	$scope.playAll = function (index) {
 		var animation = $scope.animations[index];
 		if (animation) {
+			$scope.currentAnimation = animation;
 			$scope.add(animation);
 			$timeout(function () {
 				$scope.clean();
@@ -78,6 +80,9 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 			$timeout(function () {
 				$scope.playAll(++index);
 			}, 2000);
+		}
+		else {
+			$scope.currentAnimation = undefined;
 		}
 	}
 
