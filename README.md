@@ -1,10 +1,16 @@
-##注意##
-本套件功能必須運行在angularjs 1.2版中，因為我們使用了angularjs1.2版中的一個Extra ngAnimate module，它讓我們能夠很簡單的自訂動畫效果。
+##ngAnimate##
+ngAnimate is simple transitions sulotion made for AngularJS.
 
+##Support##
+ngAnimate is only support for AngularJS 1.2 now, We use AngularJS 1.2 extra ngAnimage.js module.
 
-##為什麼要用ngAnimate##
+##Why use ngAnimate?##
+Because it provide many effects, you don't rework again.
 
-因為這個套件已經幫你寫好很多常用的效果了, 如果你需要更多的效果，請fork這個專案
+##How to use?##
+1. Add `ngAnimate.js` first. (from angularjs1.2 extras)
+2. Add `ng-animate.css` to you website.
+3. Done!
 
 ## DEMO ##
 https://dl.dropboxusercontent.com/u/24421764/Website/Projects/ngAnimate/index.html
