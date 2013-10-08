@@ -7,8 +7,7 @@ Array.prototype.remove = function(from, to) {
 var app = angular.module('app', ['ngAnimate']);
 
 
-function AppController ($scope, $rootScope, $http, $timeout) {
-
+function AppController ($scope, $rootScope, $http, $timeout, $location, $anchorScroll) {
 	$scope.list = [];
 	$scope.animations = ["toggle", 
 						"spinToggle", 
@@ -29,8 +28,12 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 	$scope.add = function (animation) {
 		$scope.animation = animation;
 		for (var i = 0; i < 3; i++) {
-			pushDelay($scope.list, { title : "item" }, i, 100);
-		};		
+			pushDelay($scope.list, { title : "item" }, i, 100, function() {
+				$location.hash('bottom');
+				$anchorScroll();
+				$location.hash('');
+			});
+		};
 	}
 
 	$scope.remove = function (item) {
@@ -44,9 +47,10 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 		};
 	}
 
-	function pushDelay (array, item, i, duration) {
+	function pushDelay (array, item, i, duration, cb) {
 		$timeout(function () {
 			array.push(item);
+			cb()
 		}, duration * i);
 	}
 
