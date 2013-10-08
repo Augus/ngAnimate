@@ -1,5 +1,5 @@
 ##ngAnimate##
-ngAnimate is simple transitions sulotion made for AngularJS.
+ngAnimate is best effect sulotion made for AngularJS.
 
 ##Support##
 ngAnimate is only support for AngularJS 1.2 now, We use AngularJS 1.2 extra ngAnimage.js module.
