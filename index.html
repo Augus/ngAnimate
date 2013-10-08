@@ -133,7 +133,9 @@
 		<li class="item" ng-class="animation" ng-repeat="item in list" ng-click="remove(item)">{{item.title}}</li>
 	</ul>
 
-
+  <div id="bottom" ng-show="list.length > 0" class="controls">
+    <div class="btn remove" ng-click="clean()">Clean</div>    
+  </div>
 
 </body>
 </html>
