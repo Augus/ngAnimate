@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="th-large" unicode="&#xe800;" d="m0-150l0 438l438 0l0-438l-438 0z m0 563l0 437l438 0l0-437l-438 0z m563-563l0 438l437 0l0-438l-437 0z m0 563l0 437l437 0l0-437l-437 0z" horiz-adv-x="1000" />
+<glyph glyph-name="th-list" unicode="&#xe801;" d="m0-150l0 250l250 0l0-250l-250 0z m0 375l0 250l250 0l0-250l-250 0z m0 375l0 250l250 0l0-250l-250 0z m391-750l0 250l609 0l0-250l-609 0z m0 375l0 250l609 0l0-250l-609 0z m0 375l0 250l609 0l0-250l-609 0z" horiz-adv-x="1000" />
+<glyph glyph-name="trash" unicode="&#xe803;" d="m0 633l0 141l289 0l0 76l246 0l0-76l289 0l0-141l-824 0z m43-783l0 676l738 0l0-676l-738 0z" horiz-adv-x="824" />
+<glyph glyph-name="play-circled2" unicode="&#xe802;" d="m0 350q0 207 147 354t353 146t354-146t146-354t-146-354t-354-146t-353 146t-147 354z m115 0q0-158 114-271t271-114t271 114t114 271t-114 272t-271 113t-271-113t-114-272z m260-250l0 500l375-250z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

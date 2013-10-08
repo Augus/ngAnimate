@@ -2,6 +2,7 @@ var app = angular.module('app', ['ngAnimate']);
 
 function AppController ($scope, $rootScope, $http, $timeout) {
 
+	$scope.layoutMode = 0;
 	$scope.list = [];
 	$scope.animations = ["toggle", 
 						"spinToggle", 
@@ -24,7 +25,7 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 	/* ------------------------------------------- */
 	$scope.add = function (animation) {
 		$scope.animation = animation;
-		for (var i = 0; i < 3; i++) {
+		for (var i = 0; i < 6; i++) {
 			pushDelay($scope.list, { title : "item" }, i, 100);
 		};		
 	}
@@ -62,6 +63,30 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 		$timeout(function () {
 			array.pop();
 		}, duration * i);
+	}
+
+	/* ------------------------------------------- */
+	/* Play All Animations
+	/* ------------------------------------------- */	
+	$scope.playAll = function (index) {
+		var animation = $scope.animations[index];
+		if (animation) {
+			$scope.add(animation);
+			$timeout(function () {
+				$scope.clean();
+			}, 1000);
+			$timeout(function () {
+				$scope.playAll(++index);
+			}, 2000);
+		}
+	}
+
+	$scope.switchGridMode = function () {
+		$scope.layoutMode = 0;
+	}
+
+	$scope.switchListMode = function () {
+		$scope.layoutMode = 1;
 	}
 }
 

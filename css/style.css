@@ -9,12 +9,62 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
+::-webkit-scrollbar {
+  background: transparent;
+  overflow: visible;
+  width: 15px;
+}
+
+/* line 17, ../sass/style.scss */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid #fff;
+}
+
+/* line 21, ../sass/style.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* line 24, ../sass/style.scss */
+::-webkit-scrollbar-thumb:horizontal {
+  border-width: 4px 6px;
+  min-width: 40px;
+}
+
+/* line 28, ../sass/style.scss */
+::-webkit-scrollbar-thumb:vertical {
+  border-width: 6px 4px;
+  min-height: 40px;
+}
+
+/* line 32, ../sass/style.scss */
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+/* line 35, ../sass/style.scss */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* line 38, ../sass/style.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #DDD;
+}
+
+/* line 41, ../sass/style.scss */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* line 45, ../sass/style.scss */
 header {
   font-family: 'Bad Script', cursive;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 header h2 {
   text-align: center;
   font-size: 40px;
@@ -23,83 +73,88 @@ header h2 {
   margin: 0;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 header small {
   font-size: 20px;
   color: #777;
   font-weight: 300;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 ol, ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .btn {
   display: inline-block;
   padding: 15px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  color: #FFF;
-  background-color: #247FCC;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#248cdb), to(#247fcc));
-  background-image: -webkit-linear-gradient(top, #248cdb, #247fcc);
-  background-image: -moz-linear-gradient(top, #248cdb, #247fcc);
-  background-image: -o-linear-gradient(top, #248cdb, #247fcc);
-  background-image: -ms-linear-gradient(top, #248cdb, #247fcc);
-  background-image: linear-gradient(top, #248cdb, #247fcc);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='darken(#50a3e2, 10%)',EndColorStr='#247fcc');
+  margin: 0 10px 10px 0;
+  border-radius: 8px;
+  color: #333;
+  background-color: #eee;
   cursor: pointer;
 }
-
-/* line 52, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .btn.block {
   display: block;
 }
-
-/* line 56, ../sass/style.scss */
-.btn.remove {
-  border: 1px solid #8B1419;
-  background-color: #D32C33;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e44e54), to(#d32c33));
-  background-image: -webkit-linear-gradient(top, #e44e54, #d32c33);
-  background-image: -moz-linear-gradient(top, #e44e54, #d32c33);
-  background-image: -o-linear-gradient(top, #e44e54, #d32c33);
-  background-image: -ms-linear-gradient(top, #e44e54, #d32c33);
-  background-image: linear-gradient(top, #e44e54, #d32c33);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#E44E54',EndColorStr='#D32C33');
+/* line 80, ../sass/style.scss */
+.btn.active, .btn:hover {
+  background-color: #ccc;
+}
+/* line 83, ../sass/style.scss */
+.btn.red {
+  color: white;
+  border: 1px solid #CC363B;
+  background-color: #CC363B;
+}
+/* line 87, ../sass/style.scss */
+.btn.red.active, .btn.red:hover {
+  background-color: #a52a2e;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .sidebar {
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
+  padding: 10px;
   width: 250px;
   background-color: white;
   overflow-y: scroll;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .controls {
   margin: 0 0 30px;
 }
 
-/* line 82, ../sass/style.scss */
-.item {
+/* line 108, ../sass/style.scss */
+.item-container {
+  width: 560px;
+}
+/* line 110, ../sass/style.scss */
+.item-container .item {
   /*display: inline-block;*/
-  background-color: rgba(0, 187, 135, 0.75);
+  background-color: #00BB87;
   padding: 25px;
   margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 8px;
   color: white;
 }
+/* line 119, ../sass/style.scss */
+.item-container.list .item {
+  float: left;
+  display: inline-block;
+  margin: 10px;
+  padding: 65px;
+}
 
-/* line 91, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .item:hover {
   cursor: pointer;
   background-color: rgba(0, 187, 135, 0.9);
