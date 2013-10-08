@@ -41,7 +41,7 @@
 }
 
 /* line 79, ../sass/ng-animation.scss */
-.slideRight, .slideLeft, .slideTop, .slideDown {
+.slide-right, .slide-left, .slide-top, .slide-down {
   -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -60,7 +60,7 @@
 /* Slide Top 
 /* ------------------------------------------- */
 /* line 87, ../sass/ng-animation.scss */
-.slideTop.ng-enter {
+.slide-top.ng-enter {
   transform: translateY(60px);
   -ms-transform: translateY(60px);
   -webkit-transform: translateY(60px);
@@ -68,7 +68,7 @@
 }
 
 /* line 92, ../sass/ng-animation.scss */
-.slideTop.ng-enter-active {
+.slide-top.ng-enter-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -76,7 +76,7 @@
 }
 
 /* line 97, ../sass/ng-animation.scss */
-.slideTop.ng-leave {
+.slide-top.ng-leave {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -84,7 +84,7 @@
 }
 
 /* line 102, ../sass/ng-animation.scss */
-.slideTop.ng-leave-active {
+.slide-top.ng-leave-active {
   transform: translateY(60px);
   -ms-transform: translateY(60px);
   -webkit-transform: translateY(60px);
@@ -95,7 +95,7 @@
 /* Slide Rigth 
 /* ------------------------------------------- */
 /* line 112, ../sass/ng-animation.scss */
-.slideRight.ng-enter {
+.slide-right.ng-enter {
   transform: translateX(60px);
   -ms-transform: translateX(60px);
   -webkit-transform: translateX(60px);
@@ -103,7 +103,7 @@
 }
 
 /* line 117, ../sass/ng-animation.scss */
-.slideRight.ng-enter-active {
+.slide-right.ng-enter-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -111,7 +111,7 @@
 }
 
 /* line 122, ../sass/ng-animation.scss */
-.slideRight.ng-leave {
+.slide-right.ng-leave {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -119,7 +119,7 @@
 }
 
 /* line 127, ../sass/ng-animation.scss */
-.slideRight.ng-leave-active {
+.slide-right.ng-leave-active {
   transform: translateX(60px);
   -ms-transform: translateX(60px);
   -webkit-transform: translateX(60px);
@@ -130,7 +130,7 @@
 /* Slide Left 
 /* ------------------------------------------- */
 /* line 137, ../sass/ng-animation.scss */
-.slideLeft.ng-enter {
+.slide-left.ng-enter {
   transform: translateX(-60px);
   -ms-transform: translateX(-60px);
   -webkit-transform: translateX(-60px);
@@ -138,7 +138,7 @@
 }
 
 /* line 142, ../sass/ng-animation.scss */
-.slideLeft.ng-enter-active {
+.slide-left.ng-enter-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -146,7 +146,7 @@
 }
 
 /* line 147, ../sass/ng-animation.scss */
-.slideLeft.ng-leave {
+.slide-left.ng-leave {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -154,7 +154,7 @@
 }
 
 /* line 152, ../sass/ng-animation.scss */
-.slideLeft.ng-leave-active {
+.slide-left.ng-leave-active {
   transform: translateX(-60px);
   -ms-transform: translateX(-60px);
   -webkit-transform: translateX(-60px);
@@ -165,7 +165,7 @@
 /* Slide Down
 /* ------------------------------------------- */
 /* line 161, ../sass/ng-animation.scss */
-.slideDown.ng-enter {
+.slide-down.ng-enter {
   transform: translateY(-60px);
   -ms-transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
@@ -173,7 +173,7 @@
 }
 
 /* line 166, ../sass/ng-animation.scss */
-.slideDown.ng-enter-active {
+.slide-down.ng-enter-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -181,7 +181,7 @@
 }
 
 /* line 171, ../sass/ng-animation.scss */
-.slideDown.ng-leave {
+.slide-down.ng-leave {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -189,7 +189,7 @@
 }
 
 /* line 176, ../sass/ng-animation.scss */
-.slideDown.ng-leave-active {
+.slide-down.ng-leave-active {
   transform: translateY(-60px);
   -ms-transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
@@ -197,7 +197,7 @@
 }
 
 /* line 182, ../sass/ng-animation.scss */
-.bouncySlideRight, .bouncySlideLeft, .bouncySlideTop, .bouncySlideDown {
+.bouncy-slide-right, .bouncy-slide-left, .bouncy-slide-top, .bouncy-slide-down {
   -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
   -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -220,7 +220,7 @@
 /* Bouncy Slide Top 
 /* ------------------------------------------- */
 /* line 190, ../sass/ng-animation.scss */
-.bouncySlideTop.ng-enter {
+.bouncy-slide-top.ng-enter {
   transform: translateY(240px);
   -ms-transform: translateY(240px);
   -webkit-transform: translateY(240px);
@@ -228,7 +228,7 @@
 }
 
 /* line 195, ../sass/ng-animation.scss */
-.bouncySlideTop.ng-enter-active {
+.bouncy-slide-top.ng-enter-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -236,7 +236,7 @@
 }
 
 /* line 200, ../sass/ng-animation.scss */
-.bouncySlideTop.ng-leave {
+.bouncy-slide-top.ng-leave {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -244,7 +244,7 @@
 }
 
 /* line 205, ../sass/ng-animation.scss */
-.bouncySlideTop.ng-leave-active {
+.bouncy-slide-top.ng-leave-active {
   transform: translateY(240px);
   -ms-transform: translateY(240px);
   -webkit-transform: translateY(240px);
@@ -255,7 +255,7 @@
 /* Bouncy Slide Rigth 
 /* ------------------------------------------- */
 /* line 214, ../sass/ng-animation.scss */
-.bouncySlideRight.ng-enter {
+.bouncy-slide-right.ng-enter {
   transform: translateX(240px);
   -ms-transform: translateX(240px);
   -webkit-transform: translateX(240px);
@@ -263,7 +263,7 @@
 }
 
 /* line 219, ../sass/ng-animation.scss */
-.bouncySlideRight.ng-enter-active {
+.bouncy-slide-right.ng-enter-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -271,7 +271,7 @@
 }
 
 /* line 224, ../sass/ng-animation.scss */
-.bouncySlideRight.ng-leave {
+.bouncy-slide-right.ng-leave {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -279,7 +279,7 @@
 }
 
 /* line 229, ../sass/ng-animation.scss */
-.bouncySlideRight.ng-leave-active {
+.bouncy-slide-right.ng-leave-active {
   transform: translateX(240px);
   -ms-transform: translateX(240px);
   -webkit-transform: translateX(240px);
@@ -290,7 +290,7 @@
 /* Bouncy Slide Left 
 /* ------------------------------------------- */
 /* line 239, ../sass/ng-animation.scss */
-.bouncySlideLeft.ng-enter {
+.bouncy-slide-left.ng-enter {
   transform: translateX(-240px);
   -ms-transform: translateX(-240px);
   -webkit-transform: translateX(-240px);
@@ -298,7 +298,7 @@
 }
 
 /* line 244, ../sass/ng-animation.scss */
-.bouncySlideLeft.ng-enter-active {
+.bouncy-slide-left.ng-enter-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -306,7 +306,7 @@
 }
 
 /* line 249, ../sass/ng-animation.scss */
-.bouncySlideLeft.ng-leave {
+.bouncy-slide-left.ng-leave {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -314,7 +314,7 @@
 }
 
 /* line 254, ../sass/ng-animation.scss */
-.bouncySlideLeft.ng-leave-active {
+.bouncy-slide-left.ng-leave-active {
   transform: translateX(-240px);
   -ms-transform: translateX(-240px);
   -webkit-transform: translateX(-240px);
@@ -325,7 +325,7 @@
 /* Bouncy Slide Down
 /* ------------------------------------------- */
 /* line 263, ../sass/ng-animation.scss */
-.bouncySlideDown.ng-enter {
+.bouncy-slide-down.ng-enter {
   transform: translateY(-240px);
   -ms-transform: translateY(-240px);
   -webkit-transform: translateY(-240px);
@@ -333,7 +333,7 @@
 }
 
 /* line 268, ../sass/ng-animation.scss */
-.bouncySlideDown.ng-enter-active {
+.bouncy-slide-down.ng-enter-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -341,7 +341,7 @@
 }
 
 /* line 273, ../sass/ng-animation.scss */
-.bouncySlideDown.ng-leave {
+.bouncy-slide-down.ng-leave {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -349,7 +349,7 @@
 }
 
 /* line 278, ../sass/ng-animation.scss */
-.bouncySlideDown.ng-leave-active {
+.bouncy-slide-down.ng-leave-active {
   transform: translateY(-240px);
   -ms-transform: translateY(-240px);
   -webkit-transform: translateY(-240px);
@@ -360,7 +360,7 @@
 /* Scale Fade 
 /* ------------------------------------------- */
 /* line 289, ../sass/ng-animation.scss */
-.scaleFade {
+.scale-fade {
   -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -376,7 +376,7 @@
 }
 
 /* line 293, ../sass/ng-animation.scss */
-.scaleFade.ng-enter {
+.scale-fade.ng-enter {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
   -webkit-transform: scale(0.7);
@@ -384,7 +384,7 @@
 }
 
 /* line 298, ../sass/ng-animation.scss */
-.scaleFade.ng-enter-active {
+.scale-fade.ng-enter-active {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -392,7 +392,7 @@
 }
 
 /* line 303, ../sass/ng-animation.scss */
-.scaleFade.ng-leave {
+.scale-fade.ng-leave {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -400,7 +400,7 @@
 }
 
 /* line 308, ../sass/ng-animation.scss */
-.scaleFade.ng-leave-active {
+.scale-fade.ng-leave-active {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
   -webkit-transform: scale(0.7);
@@ -411,7 +411,7 @@
 /* Spin Fade 
 /* ------------------------------------------- */
 /* line 317, ../sass/ng-animation.scss */
-.spinToggle {
+.spin-toggle {
   -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -427,7 +427,7 @@
 }
 
 /* line 321, ../sass/ng-animation.scss */
-.spinToggle.ng-enter {
+.spin-toggle.ng-enter {
   transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
@@ -435,7 +435,7 @@
 }
 
 /* line 326, ../sass/ng-animation.scss */
-.spinToggle.ng-enter-active {
+.spin-toggle.ng-enter-active {
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -443,7 +443,7 @@
 }
 
 /* line 331, ../sass/ng-animation.scss */
-.spinToggle.ng-leave {
+.spin-toggle.ng-leave {
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -451,7 +451,7 @@
 }
 
 /* line 336, ../sass/ng-animation.scss */
-.spinToggle.ng-leave-active {
+.spin-toggle.ng-leave-active {
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -462,7 +462,7 @@
 /* Scale in Fade 
 /* ------------------------------------------- */
 /* line 346, ../sass/ng-animation.scss */
-.scaleFadeIn {
+.scale-fade-in {
   -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -478,7 +478,7 @@
 }
 
 /* line 350, ../sass/ng-animation.scss */
-.scaleFadeIn.ng-enter {
+.scale-fade-in.ng-enter {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
@@ -486,7 +486,7 @@
 }
 
 /* line 355, ../sass/ng-animation.scss */
-.scaleFadeIn.ng-enter-active {
+.scale-fade-in.ng-enter-active {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -494,7 +494,7 @@
 }
 
 /* line 360, ../sass/ng-animation.scss */
-.scaleFadeIn.ng-leave {
+.scale-fade-in.ng-leave {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -502,7 +502,7 @@
 }
 
 /* line 365, ../sass/ng-animation.scss */
-.scaleFadeIn.ng-leave-active {
+.scale-fade-in.ng-leave-active {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
@@ -513,7 +513,7 @@
 /* Bouncy Scale in Fade 
 /* ------------------------------------------- */
 /* line 375, ../sass/ng-animation.scss */
-.bouncyScaleIn {
+.bouncy-scale-in {
   -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
   -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -533,7 +533,7 @@
 }
 
 /* line 379, ../sass/ng-animation.scss */
-.bouncyScaleIn.ng-enter {
+.bouncy-scale-in.ng-enter {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
@@ -541,7 +541,7 @@
 }
 
 /* line 384, ../sass/ng-animation.scss */
-.bouncyScaleIn.ng-enter-active {
+.bouncy-scale-in.ng-enter-active {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -549,7 +549,7 @@
 }
 
 /* line 389, ../sass/ng-animation.scss */
-.bouncyScaleIn.ng-leave {
+.bouncy-scale-in.ng-leave {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -557,7 +557,7 @@
 }
 
 /* line 394, ../sass/ng-animation.scss */
-.bouncyScaleIn.ng-leave-active {
+.bouncy-scale-in.ng-leave-active {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
@@ -568,7 +568,7 @@
 /* Flip In 
 /* ------------------------------------------- */
 /* line 404, ../sass/ng-animation.scss */
-.flipIn {
+.flip-in {
   -webkit-transition: all 550ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 550ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 550ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -584,7 +584,7 @@
 }
 
 /* line 408, ../sass/ng-animation.scss */
-.flipIn.ng-enter {
+.flip-in.ng-enter {
   transform: perspective(300px) rotateX(90deg);
   -ms-transform: perspective(300px) rotateX(90deg);
   -webkit-transform: perspective(300px) rotateX(90deg);
@@ -592,7 +592,7 @@
 }
 
 /* line 413, ../sass/ng-animation.scss */
-.flipIn.ng-enter-active {
+.flip-in.ng-enter-active {
   transform: perspective(300px) rotateX(0deg);
   -ms-transform: perspective(300px) rotateX(0deg);
   -webkit-transform: perspective(300px) rotateX(0deg);
@@ -600,7 +600,7 @@
 }
 
 /* line 418, ../sass/ng-animation.scss */
-.flipIn.ng-leave {
+.flip-in.ng-leave {
   transform: perspective(300px) rotateX(0deg);
   -ms-transform: perspective(300px) rotateX(0deg);
   -webkit-transform: perspective(300px) rotateX(0deg);
@@ -608,7 +608,7 @@
 }
 
 /* line 423, ../sass/ng-animation.scss */
-.flipIn.ng-leave-active {
+.flip-in.ng-leave-active {
   transform: perspective(300px) rotateX(135deg);
   -ms-transform: perspective(300px) rotateX(135deg);
   -webkit-transform: perspective(300px) rotateX(135deg);
@@ -619,7 +619,7 @@
 /* Rotate In 
 /* ------------------------------------------- */
 /* line 432, ../sass/ng-animation.scss */
-.rotateIn {
+.rotate-in {
   -webkit-transition: all 550ms cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
   -webkit-transition: all 550ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -639,7 +639,7 @@
 }
 
 /* line 436, ../sass/ng-animation.scss */
-.rotateIn.ng-enter {
+.rotate-in.ng-enter {
   transform: perspective(300px) rotateY(40deg);
   -ms-transform: perspective(300px) rotateY(40deg);
   -webkit-transform: perspective(300px) rotateY(40deg);
@@ -647,7 +647,7 @@
 }
 
 /* line 441, ../sass/ng-animation.scss */
-.rotateIn.ng-enter-active {
+.rotate-in.ng-enter-active {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
   -webkit-transform: perspective(300px) rotateY(0deg);
@@ -655,7 +655,7 @@
 }
 
 /* line 446, ../sass/ng-animation.scss */
-.rotateIn.ng-leave {
+.rotate-in.ng-leave {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
   -webkit-transform: perspective(300px) rotateY(0deg);
@@ -663,7 +663,7 @@
 }
 
 /* line 451, ../sass/ng-animation.scss */
-.rotateIn.ng-leave-active {
+.rotate-in.ng-leave-active {
   transform: perspective(300px) rotateY(-40deg);
   -ms-transform: perspective(300px) rotateY(-40deg);
   -webkit-transform: perspective(300px) rotateY(-40deg);

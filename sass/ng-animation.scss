@@ -76,7 +76,7 @@
 	opacity: 0;	
 }
 
-.slideRight, .slideLeft, .slideTop, .slideDown {
+.slide-right, .slide-left, .slide-top, .slide-down {
 	@include easingTimingFunction(250ms);
 }
 
@@ -84,22 +84,22 @@
 /* Slide Top 
 /* ------------------------------------------- */
 
-.slideTop.ng-enter {
+.slide-top.ng-enter {
 	@include transform(translateY(60px)); 
 	opacity: 0;
 }
 
-.slideTop.ng-enter-active {
+.slide-top.ng-enter-active {
 	@include transform(translateY(0));
 	opacity: 1;	
 }
 
-.slideTop.ng-leave {
+.slide-top.ng-leave {
 	@include transform(translateY(0));
 	opacity: 1;
 }
 
-.slideTop.ng-leave-active {
+.slide-top.ng-leave-active {
 	@include transform(translateY(60px)); 
 	opacity: 0;	
 }
@@ -109,22 +109,22 @@
 /* Slide Rigth 
 /* ------------------------------------------- */
 
-.slideRight.ng-enter {
+.slide-right.ng-enter {
 	@include transform(translateX(60px)); 
 	opacity: 0;
 }
 
-.slideRight.ng-enter-active {
+.slide-right.ng-enter-active {
 	@include transform(translateX(0));
 	opacity: 1;	
 }
 
-.slideRight.ng-leave {
+.slide-right.ng-leave {
 	@include transform(translateX(0));
 	opacity: 1;
 }
 
-.slideRight.ng-leave-active {
+.slide-right.ng-leave-active {
 	@include transform(translateX(60px)); 
 	opacity: 0;	
 }
@@ -134,22 +134,22 @@
 /* Slide Left 
 /* ------------------------------------------- */
 
-.slideLeft.ng-enter {
+.slide-left.ng-enter {
 	@include transform(translateX(-60px));
 	opacity: 0;
 }
 
-.slideLeft.ng-enter-active {
+.slide-left.ng-enter-active {
 	@include transform(translateX(0));
 	opacity: 1;	
 }
 
-.slideLeft.ng-leave {
+.slide-left.ng-leave {
 	@include transform(translateX(0));
 	opacity: 1;
 }
 
-.slideLeft.ng-leave-active {
+.slide-left.ng-leave-active {
 	@include transform(translateX(-60px));
 	opacity: 0;	
 }
@@ -158,28 +158,28 @@
 /* Slide Down
 /* ------------------------------------------- */
 
-.slideDown.ng-enter {
+.slide-down.ng-enter {
 	@include transform(translateY(-60px)); 
 	opacity: 0;
 }
 
-.slideDown.ng-enter-active {
+.slide-down.ng-enter-active {
 	@include transform(translateY(0));
 	opacity: 1;	
 }
 
-.slideDown.ng-leave {
+.slide-down.ng-leave {
 	@include transform(translateY(0));
 	opacity: 1;
 }
 
-.slideDown.ng-leave-active {
+.slide-down.ng-leave-active {
 	@include transform(translateY(-60px)); 
 	opacity: 0;	
 }
 
 
-.bouncySlideRight, .bouncySlideLeft, .bouncySlideTop, .bouncySlideDown {
+.bouncy-slide-right, .bouncy-slide-left, .bouncy-slide-top, .bouncy-slide-down {
 	@include bouncyTimingFunction(450ms);
 }
 
@@ -187,22 +187,22 @@
 /* Bouncy Slide Top 
 /* ------------------------------------------- */
 
-.bouncySlideTop.ng-enter {
+.bouncy-slide-top.ng-enter {
 	@include transform(translateY(240px));
 	opacity: 0;
 }
 
-.bouncySlideTop.ng-enter-active {
+.bouncy-slide-top.ng-enter-active {
 	@include transform(translateY(0));
 	opacity: 1;	
 }
 
-.bouncySlideTop.ng-leave {
+.bouncy-slide-top.ng-leave {
 	@include transform(translateY(0));
 	opacity: 1;
 }
 
-.bouncySlideTop.ng-leave-active {
+.bouncy-slide-top.ng-leave-active {
 	@include transform(translateY(240px)); 
 	opacity: 0;	
 }
@@ -211,22 +211,22 @@
 /* Bouncy Slide Rigth 
 /* ------------------------------------------- */
 
-.bouncySlideRight.ng-enter {
+.bouncy-slide-right.ng-enter {
 	@include transform(translateX(240px)); 
 	opacity: 0;
 }
 
-.bouncySlideRight.ng-enter-active {
+.bouncy-slide-right.ng-enter-active {
 	@include transform(translateX(0));
 	opacity: 1;	
 }
 
-.bouncySlideRight.ng-leave {
+.bouncy-slide-right.ng-leave {
 	@include transform(translateX(0));
 	opacity: 1;
 }
 
-.bouncySlideRight.ng-leave-active {
+.bouncy-slide-right.ng-leave-active {
 	@include transform(translateX(240px));
 	opacity: 0;	
 }
@@ -236,22 +236,22 @@
 /* Bouncy Slide Left 
 /* ------------------------------------------- */
 
-.bouncySlideLeft.ng-enter {
+.bouncy-slide-left.ng-enter {
 	@include transform(translateX(-240px));
 	opacity: 0;	
 }
 
-.bouncySlideLeft.ng-enter-active {
+.bouncy-slide-left.ng-enter-active {
 	@include transform(translateX(0));
 	opacity: 1;	
 }
 
-.bouncySlideLeft.ng-leave {
+.bouncy-slide-left.ng-leave {
 	@include transform(translateX(0));
 	opacity: 1;
 }
 
-.bouncySlideLeft.ng-leave-active {
+.bouncy-slide-left.ng-leave-active {
 	@include transform(translateX(-240px));
 	opacity: 0;	
 }
@@ -260,22 +260,22 @@
 /* Bouncy Slide Down
 /* ------------------------------------------- */
 
-.bouncySlideDown.ng-enter {
+.bouncy-slide-down.ng-enter {
 	@include transform(translateY(-240px));
 	opacity: 0;
 }
 
-.bouncySlideDown.ng-enter-active {
+.bouncy-slide-down.ng-enter-active {
 	@include transform(translateY(0));
 	opacity: 1;	
 }
 
-.bouncySlideDown.ng-leave {
+.bouncy-slide-down.ng-leave {
 	@include transform(translateY(0));
 	opacity: 1;
 }
 
-.bouncySlideDown.ng-leave-active {
+.bouncy-slide-down.ng-leave-active {
 	@include transform(translateY(-240px));
 	opacity: 0;	
 }
@@ -286,26 +286,26 @@
 /* Scale Fade 
 /* ------------------------------------------- */
 
-.scaleFade {
+.scale-fade {
 	@include easingTimingFunction(250ms);
 }
 
-.scaleFade.ng-enter {
+.scale-fade.ng-enter {
 	@include transform(scale(0.7));
 	opacity: 0;
 }
 
-.scaleFade.ng-enter-active {
+.scale-fade.ng-enter-active {
 	@include transform(scale(1));
 	opacity: 1;	
 }
 
-.scaleFade.ng-leave {
+.scale-fade.ng-leave {
 	@include transform(scale(1));
 	opacity: 1;
 }
 
-.scaleFade.ng-leave-active {
+.scale-fade.ng-leave-active {
 	@include transform(scale(0.7)); 
 	opacity: 0;	
 }
@@ -314,26 +314,26 @@
 /* Spin Fade 
 /* ------------------------------------------- */
 
-.spinToggle {
+.spin-toggle {
 	@include easingTimingFunction(250ms);
 }
 
-.spinToggle.ng-enter {
+.spin-toggle.ng-enter {
 	@include transform(rotate(225deg));
 	opacity: 0;
 }
 
-.spinToggle.ng-enter-active {
+.spin-toggle.ng-enter-active {
 	@include transform(rotate(0deg));
 	opacity: 1;	
 }
 
-.spinToggle.ng-leave {
+.spin-toggle.ng-leave {
 	@include transform(rotate(0deg));
 	opacity: 1;
 }
 
-.spinToggle.ng-leave-active {
+.spin-toggle.ng-leave-active {
 	@include transform(rotate(90deg)); 
 	opacity: 0;	
 }
@@ -343,26 +343,26 @@
 /* Scale in Fade 
 /* ------------------------------------------- */
 
-.scaleFadeIn {
+.scale-fade-in {
 	@include easingOutQuadTimingFunction(250ms);
 }
 
-.scaleFadeIn.ng-enter {
+.scale-fade-in.ng-enter {
 	@include transform(scale(3));
 	opacity: 0;
 }
 
-.scaleFadeIn.ng-enter-active {
+.scale-fade-in.ng-enter-active {
 	@include transform(scale(1));
 	opacity: 1;	
 }
 
-.scaleFadeIn.ng-leave {
+.scale-fade-in.ng-leave {
 	@include transform(scale(1));
 	opacity: 1;
 }
 
-.scaleFadeIn.ng-leave-active {
+.scale-fade-in.ng-leave-active {
 	@include transform(scale(3));
 	opacity: 0;	
 }
@@ -372,26 +372,26 @@
 /* Bouncy Scale in Fade 
 /* ------------------------------------------- */
 
-.bouncyScaleIn {
+.bouncy-scale-in {
 	@include bouncyTimingFunction(450ms);
 }
 
-.bouncyScaleIn.ng-enter {
+.bouncy-scale-in.ng-enter {
 	@include transform(scale(3));
 	opacity: 0;
 }
 
-.bouncyScaleIn.ng-enter-active {
+.bouncy-scale-in.ng-enter-active {
 	@include transform(scale(1));
 	opacity: 1;	
 }
 
-.bouncyScaleIn.ng-leave {
+.bouncy-scale-in.ng-leave {
 	@include transform(scale(1));
 	opacity: 1;
 }
 
-.bouncyScaleIn.ng-leave-active {
+.bouncy-scale-in.ng-leave-active {
 	@include transform(scale(3));
 	opacity: 0;	
 }
@@ -401,26 +401,26 @@
 /* Flip In 
 /* ------------------------------------------- */
 
-.flipIn {
+.flip-in {
 	@include easingTimingFunction(550ms);
 }
 
-.flipIn.ng-enter {
+.flip-in.ng-enter {
 	@include transform(perspective(300px) rotateX(90deg));
 	opacity: 0.7;
 }
 
-.flipIn.ng-enter-active {
+.flip-in.ng-enter-active {
 	@include transform(perspective(300px) rotateX(0deg));
 	opacity: 1;	
 }
 
-.flipIn.ng-leave {
+.flip-in.ng-leave {
 	@include transform(perspective(300px) rotateX(0deg));
 	opacity: 1;
 }
 
-.flipIn.ng-leave-active {
+.flip-in.ng-leave-active {
 	@include transform(perspective(300px) rotateX(135deg)); 
 	opacity: 0.7;	
 }
@@ -429,26 +429,26 @@
 /* Rotate In 
 /* ------------------------------------------- */
 
-.rotateIn {
+.rotate-in {
 	@include bouncyTimingFunction(550ms);
 }
 
-.rotateIn.ng-enter {
+.rotate-in.ng-enter {
 	@include transform(perspective(300px) rotateY(40deg));
 	opacity: 0.7;
 }
 
-.rotateIn.ng-enter-active {
+.rotate-in.ng-enter-active {
 	@include transform(perspective(300px) rotateY(0deg));
 	opacity: 1;	
 }
 
-.rotateIn.ng-leave {
+.rotate-in.ng-leave {
 	@include transform(perspective(300px) rotateY(0deg));
 	opacity: 1;
 }
 
-.rotateIn.ng-leave-active {
+.rotate-in.ng-leave-active {
 	@include transform(perspective(300px) rotateY(-40deg)); 
 	opacity: 0.7;	
 }

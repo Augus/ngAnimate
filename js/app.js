@@ -5,20 +5,20 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 	$scope.layoutMode = 0;
 	$scope.list = [];
 	$scope.animations = ["toggle", 
-						"spinToggle", 
-						"slideLeft", 
-						"slideRight", 
-						"slideTop", 
-						"slideDown", 
-						"bouncySlideLeft", 
-						"bouncySlideRight", 
-						"bouncySlideTop", 
-						"bouncySlideDown", 
-						"scaleFade", 
-						"scaleFadeIn", 
-						"bouncyScaleIn", 
-						"flipIn", 
-						"rotateIn"];
+						"spin-toggle", 
+						"slide-left", 
+						"slide-right", 
+						"slide-top", 
+						"slide-down", 
+						"bouncy-slide-left", 
+						"bouncy-slide-right", 
+						"bouncy-slide-top", 
+						"bouncy-slide-down", 
+						"scale-fade", 
+						"scale-fade-in", 
+						"bouncy-scale-in", 
+						"flip-in", 
+						"rotate-in"];
 
 	/* ------------------------------------------- */
 	/* Add Iems
