@@ -7,6 +7,10 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 	$scope.currentAnimation;
 	$scope.animations = ["toggle", 
 						"spin-toggle", 
+						"scale-fade", 
+						"scale-fade-in", 
+						"bouncy-scale-in", 
+						"flip-in", 
 						"slide-left", 
 						"slide-right", 
 						"slide-top", 
@@ -15,10 +19,6 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 						"bouncy-slide-right", 
 						"bouncy-slide-top", 
 						"bouncy-slide-down", 
-						"scale-fade", 
-						"scale-fade-in", 
-						"bouncy-scale-in", 
-						"flip-in", 
 						"rotate-in"];
 
 	/* ------------------------------------------- */
