@@ -2,6 +2,7 @@ var app = angular.module('app', ['ngAnimate']);
 
 function AppController ($scope, $rootScope, $http, $timeout) {
 
+	// grid(0), list (1)
 	$scope.layoutMode = 0;
 	$scope.list = [];
 	$scope.currentAnimation;
@@ -21,64 +22,39 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 						"bouncy-slide-down", 
 						"rotate-in"];
 
-	/* ------------------------------------------- */
-	/* Add Iems
-	/* ------------------------------------------- */
-	$scope.add = function (animation) {
+	$scope.addItem = function (animation) {
 		$scope.animation = animation;
 		for (var i = 0; i < 6; i++) {
-			pushDelay($scope.list, { title : "item" }, i, 100);
+			$timeout(function () {
+				$scope.list.push({ title : "item" });
+			}, 100 * i);
 		};		
 	}
 
-	/* ------------------------------------------- */
-	/* Remove Item
-	/* ------------------------------------------- */
-	$scope.remove = function (item) {
+	$scope.removeItem = function (item) {
 		var index = $scope.list.indexOf(item);
 		$scope.list.remove(index);
 	}
 
-	/* ------------------------------------------- */
-	/* Clean All Items
-	/* ------------------------------------------- */
-	$scope.clean = function () {
+	$scope.cleanList = function () {
 		for (var i = 0; i < $scope.list.length; i++) {
-			removeDelay($scope.list, i, 100);
+			$timeout(function () {
+				$scope.list.pop();
+			}, 100 * i);
 		};
 	}
 
-	/* ------------------------------------------- */
-	/* Array Push Delay
-	/* ------------------------------------------- */
-	function pushDelay (array, item, i, duration) {
-		$timeout(function () {
-			array.push(item);
-		}, duration * i);
-	}
-
-	/* ------------------------------------------- */
-	/* Array Pop Delay
-	/* ------------------------------------------- */
-	function removeDelay (array, i, duration) {
-		$timeout(function () {
-			array.pop();
-		}, duration * i);
-	}
-
-	/* ------------------------------------------- */
-	/* Play All Animations
-	/* ------------------------------------------- */	
-	$scope.playAll = function (index) {
+	// Play all animation, it will auto clean item list.
+	$scope.autoPlayAnimation = function (index) {
 		var animation = $scope.animations[index];
 		if (animation) {
 			$scope.currentAnimation = animation;
-			$scope.add(animation);
+			$scope.addItem(animation);
 			$timeout(function () {
-				$scope.clean();
+				$scope.cleanList();
 			}, 1000);
 			$timeout(function () {
-				$scope.playAll(++index);
+				$scope.autoPlayAnimation(++index);
 			}, 2000);
 		}
 		else {
