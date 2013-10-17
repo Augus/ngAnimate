@@ -1,8 +1,12 @@
+##Change Log##
+
+- 2013/10/17 : Fix the problems in v1.2.0-rc.3, ngAnimate is **support angularjs 1.2.0-rc.3** now
+
 ##ngAnimate##
 ngAnimate is the best effect solution made for AngularJS.
 
 ##Support##
-ngAnimate only supports AngularJS 1.2 now - it is based on the AngularJS 1.2 extras ngAnimate.js module.
+ngAnimate only supports angularjs 1.2.0-rc.3 now - it is based on the AngularJS 1.2 extras ngAnimate.js module.
 
 ##Why use ngAnimate?##
 Save yourself time by not having to recreate these animations.
