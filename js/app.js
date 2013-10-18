@@ -1,23 +1,34 @@
 var app = angular.module('app', ['ngAnimate']);
 
-// TODO(Augus)
-// var ngModule = angular.module('YourApp', []);
-// ngModule.animation('.my-crazy-animation', function() {
+// myApp.animation('', function() {
 //   return {
-//     enter: function(element, done) {
-//       //run the animation
-//       //!annotate Cancel Animation|This function (if provided) will perform the cancellation of the animation when another is triggered
-//       return function(element, done) {
-//         //cancel the animation
+//     addClass : function(element, className, done) {
+//       if(className == 'ng-hide') {
+//         jQuery(element).animate({
+//           opacity:0
+//         }, done);
+//       }
+//       else {
+//         done();
+//       }
+//     },
+//     removeClass : function(element, className, done) {
+//       if(className == 'ng-hide') {
+//         element.css('opacity',0);
+
+//         /* remove it early so you can animate on it since
+//            it is not possible using element.css() to set
+//            a style using !important */
+//         element.removeClass('ng-hide'); 
+//         jQuery(element).animate({
+//           opacity:1
+//         }, done);
+//       }
+//       else {
+//         done();
 //       }
 //     }
-//     leave: function(element, done) { },
-//     move: function(element, done) { },
-//     show: function(element, done) { },
-//     hide: function(element, done) { },
-//     addClass: function(element, className, done) { },
-//     removeClass: function(element, className, done) { },
-//   }
+//   };
 // });
 
 

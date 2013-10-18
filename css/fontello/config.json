@@ -29,6 +29,12 @@
       "css": "play-circled2",
       "code": 59394,
       "src": "elusive"
+    },
+    {
+      "uid": "7697f1734d53461137f05faab3f79cf0",
+      "css": "desktop",
+      "code": 59396,
+      "src": "linecons"
     }
   ]
 }
