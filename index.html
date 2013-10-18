@@ -39,11 +39,12 @@
   <div class="controls">
     <div class="btn" ng-class="{'active' : layoutMode == 0}" ng-click="switchGridMode()"><i class="icon-th-large"></i> Grid</div>
     <div class="btn" ng-class="{'active' : layoutMode == 1}" ng-click="switchListMode()"><i class="icon-th-list"></i> List</div>
+    <div class="btn" ng-click="toggle()"><i class="icon-th-list"></i> Toggle</div>
     <div class="btn red" ng-click="cleanList()"><i class="icon-trash"></i> Clean</div>
   </div>
 
 	<ul class="item-container" ng-class="{'list' : layoutMode == 0}">
-		<li class="item" ng-class="animation" ng-repeat="item in list" ng-click="removeItem(item)">{{item.title}}</li>
+		<li class="item" ng-show="isShow" ng-class="animation" ng-repeat="item in list" ng-click="removeItem(item)">{{item.title}}</li>
 	</ul>
 
 </body>
