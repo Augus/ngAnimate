@@ -4,6 +4,9 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 
 	// grid(0), list (1)
 	$scope.layoutMode = 0;
+	$scope.showMode = false;
+	$scope.showAnim = true;
+	$scope.showStatus = "";
 	$scope.list = [];
 	$scope.currentAnimation;
 	$scope.animations = ["toggle", 
@@ -24,6 +27,12 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 
 	$scope.addItem = function (animation) {
 		$scope.animation = animation;
+		if ($scope.showMode) {
+			$scope.currentAnimation = animation;
+			$scope.showIt();
+			return;
+		}
+
 		for (var i = 0; i < 6; i++) {
 			$timeout(function () {
 				$scope.list.push({ title : "item" });
@@ -49,10 +58,14 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 		var animation = $scope.animations[index];
 		if (animation) {
 			$scope.currentAnimation = animation;
-			$scope.addItem(animation);
-			$timeout(function () {
-				$scope.cleanList();
-			}, 1000);
+			if ($scope.showMode) {
+				$scope.showIt();
+			} else {
+				$scope.addItem(animation);
+				$timeout(function () {
+					$scope.cleanList();
+				}, 1000);
+			}
 			$timeout(function () {
 				$scope.autoPlayAnimation(++index);
 			}, 2000);
@@ -68,6 +81,28 @@ function AppController ($scope, $rootScope, $http, $timeout) {
 
 	$scope.switchListMode = function () {
 		$scope.layoutMode = 1;
+	}
+
+	$scope.switchShowMode = function () {
+		$scope.showMode = $scope.showMode?false:true;
+		$scope.showIt();
+	}
+
+	$scope.showIt = function() {
+		$scope.showStatus = "";
+		$scope.animationShow = !$scope.currentAnimation?undefined:$scope.currentAnimation + "-show";
+		if (!$scope.animationShow) {
+			return;
+		}
+		$scope.showAnim = true;
+		$timeout(function () {
+			$scope.showAnim = false;
+			$scope.showStatus = "(ng-hide-add : hiding)";
+			$timeout(function () {
+				$scope.showAnim = true;
+				$scope.showStatus = "(ng-hide-remove = showing)";
+			}, 500);
+		}, 500);
 	}
 }
 

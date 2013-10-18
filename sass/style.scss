@@ -123,9 +123,26 @@ ol, ul {
 			padding: 65px;
 		}
 	}
+
 }
 
 .item:hover {
 	cursor: pointer;
 	background-color: rgba(0, 187, 135, 0.9);
 }
+
+.show-item {
+	width: 560px;
+	height: 300px;
+	background-color: #00BB87;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+
+	span {
+		font-size: 25px;
+		display: block;
+	}
+}
+
