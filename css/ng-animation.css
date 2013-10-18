@@ -5,7 +5,7 @@
 /* Toggle Fade  
 /* ------------------------------------------- */
 /* line 64, ../sass/ng-animation.scss */
-.toggle {
+.toggle, .toggle-show {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -17,35 +17,31 @@
   -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  /* easeOutQuad */
-}
+  /* easeOutQuad */ }
 
 /* line 68, ../sass/ng-animation.scss */
-.toggle.ng-enter {
+.toggle.ng-enter, .toggle-show.ng-hide-remove {
   opacity: 0;
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-}
+  display: block !important; }
 
-/* line 73, ../sass/ng-animation.scss */
-.toggle.ng-enter-active {
-  opacity: 1;
-}
+/* line 74, ../sass/ng-animation.scss */
+.toggle.ng-enter-active, .toggle-show.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1; }
 
-/* line 77, ../sass/ng-animation.scss */
-.toggle.ng-leave {
+/* line 78, ../sass/ng-animation.scss */
+.toggle.ng-leave, .toggle-show.ng-hide-add {
   opacity: 1;
   transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
-}
+  -webkit-transition-duration: 250ms; }
 
-/* line 82, ../sass/ng-animation.scss */
-.toggle.ng-leave-active {
-  opacity: 0;
-}
+/* line 83, ../sass/ng-animation.scss */
+.toggle.ng-leave-active, .toggle-show.ng-hide-add.ng-hide-add-active {
+  opacity: 0; }
 
-/* line 86, ../sass/ng-animation.scss */
-.slide-right, .slide-left, .slide-top, .slide-down {
+/* line 87, ../sass/ng-animation.scss */
+.slide-right, .slide-left, .slide-top, .slide-down, .slide-right-show, .slide-left-show, .slide-top-show, .slide-down-show {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -57,167 +53,154 @@
   -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  /* easeOutQuad */
-}
+  /* easeOutQuad */ }
 
 /* ------------------------------------------- */
 /* Slide Top 
 /* ------------------------------------------- */
-/* line 94, ../sass/ng-animation.scss */
-.slide-top.ng-enter {
+/* line 95, ../sass/ng-animation.scss */
+.slide-top.ng-enter, .slide-top-show.ng-hide-remove {
   transform: translateY(60px);
   -ms-transform: translateY(60px);
   -webkit-transform: translateY(60px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 100, ../sass/ng-animation.scss */
-.slide-top.ng-enter-active {
+/* line 102, ../sass/ng-animation.scss */
+.slide-top.ng-enter-active, .slide-top-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 105, ../sass/ng-animation.scss */
-.slide-top.ng-leave {
+/* line 107, ../sass/ng-animation.scss */
+.slide-top.ng-leave, .slide-top-show.ng-hide-add {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 111, ../sass/ng-animation.scss */
-.slide-top.ng-leave-active {
+/* line 113, ../sass/ng-animation.scss */
+.slide-top.ng-leave-active, .slide-top-show.ng-hide-add.ng-hide-add-active {
   transform: translateY(60px);
   -ms-transform: translateY(60px);
   -webkit-transform: translateY(60px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Slide Rigth 
 /* ------------------------------------------- */
-/* line 121, ../sass/ng-animation.scss */
-.slide-right.ng-enter {
+/* line 123, ../sass/ng-animation.scss */
+.slide-right.ng-enter, .slide-right-show.ng-hide-remove {
   transform: translateX(60px);
   -ms-transform: translateX(60px);
   -webkit-transform: translateX(60px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 127, ../sass/ng-animation.scss */
-.slide-right.ng-enter-active {
+/* line 130, ../sass/ng-animation.scss */
+.slide-right.ng-enter-active, .slide-right-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 132, ../sass/ng-animation.scss */
-.slide-right.ng-leave {
+/* line 135, ../sass/ng-animation.scss */
+.slide-right.ng-leave, .slide-right-show.ng-hide-add {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 138, ../sass/ng-animation.scss */
-.slide-right.ng-leave-active {
+/* line 141, ../sass/ng-animation.scss */
+.slide-right.ng-leave-active, .slide-right-show.ng-hide-add.ng-hide-add-active {
   transform: translateX(60px);
   -ms-transform: translateX(60px);
   -webkit-transform: translateX(60px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Slide Left 
 /* ------------------------------------------- */
-/* line 148, ../sass/ng-animation.scss */
-.slide-left.ng-enter {
+/* line 151, ../sass/ng-animation.scss */
+.slide-left.ng-enter, .slide-left-show.ng-hide-remove {
   transform: translateX(-60px);
   -ms-transform: translateX(-60px);
   -webkit-transform: translateX(-60px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 154, ../sass/ng-animation.scss */
-.slide-left.ng-enter-active {
+/* line 158, ../sass/ng-animation.scss */
+.slide-left.ng-enter-active, .slide-left-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 159, ../sass/ng-animation.scss */
-.slide-left.ng-leave {
+/* line 163, ../sass/ng-animation.scss */
+.slide-left.ng-leave, .slide-left-show.ng-hide-add {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 165, ../sass/ng-animation.scss */
-.slide-left.ng-leave-active {
+/* line 169, ../sass/ng-animation.scss */
+.slide-left.ng-leave-active, .slide-left-show.ng-hide-add.ng-hide-add-active {
   transform: translateX(-60px);
   -ms-transform: translateX(-60px);
   -webkit-transform: translateX(-60px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Slide Down
 /* ------------------------------------------- */
-/* line 174, ../sass/ng-animation.scss */
-.slide-down.ng-enter {
+/* line 178, ../sass/ng-animation.scss */
+.slide-down.ng-enter, .slide-down-show.ng-hide-remove {
   transform: translateY(-60px);
   -ms-transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
-
-/* line 180, ../sass/ng-animation.scss */
-.slide-down.ng-enter-active {
-  transform: translateY(0);
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  opacity: 1;
-}
+  display: block !important; }
 
 /* line 185, ../sass/ng-animation.scss */
-.slide-down.ng-leave {
+.slide-down.ng-enter-active, .slide-down-show.ng-hide-remove.ng-hide-remove-active {
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  opacity: 1; }
+
+/* line 190, ../sass/ng-animation.scss */
+.slide-down.ng-leave, .slide-down-show.ng-hide-add {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 191, ../sass/ng-animation.scss */
-.slide-down.ng-leave-active {
+/* line 196, ../sass/ng-animation.scss */
+.slide-down.ng-leave-active, .slide-down-show.ng-hide-add.ng-hide-add-active {
   transform: translateY(-60px);
   -ms-transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
-  opacity: 0;
-}
+  opacity: 0; }
 
-/* line 197, ../sass/ng-animation.scss */
-.bouncy-slide-right, .bouncy-slide-left, .bouncy-slide-top, .bouncy-slide-down {
+/* line 202, ../sass/ng-animation.scss */
+.bouncy-slide-right, .bouncy-slide-left, .bouncy-slide-top, .bouncy-slide-down, .bouncy-slide-right-show, .bouncy-slide-left-show, .bouncy-slide-top-show, .bouncy-slide-down-show {
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -233,170 +216,157 @@
   -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
-  /* custom */
-}
+  /* custom */ }
 
 /* ------------------------------------------- */
 /* Bouncy Slide Top 
 /* ------------------------------------------- */
-/* line 205, ../sass/ng-animation.scss */
-.bouncy-slide-top.ng-enter {
+/* line 210, ../sass/ng-animation.scss */
+.bouncy-slide-top.ng-enter, .bouncy-slide-top-show.ng-hide-remove {
   transform: translateY(240px);
   -ms-transform: translateY(240px);
   -webkit-transform: translateY(240px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 211, ../sass/ng-animation.scss */
-.bouncy-slide-top.ng-enter-active {
+/* line 217, ../sass/ng-animation.scss */
+.bouncy-slide-top.ng-enter-active, .bouncy-slide-top-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
-  opacity: 1;
-}
-
-/* line 216, ../sass/ng-animation.scss */
-.bouncy-slide-top.ng-leave {
-  transform: translateY(0);
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
 /* line 222, ../sass/ng-animation.scss */
-.bouncy-slide-top.ng-leave-active {
+.bouncy-slide-top.ng-leave, .bouncy-slide-top-show.ng-hide-add {
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1; }
+
+/* line 228, ../sass/ng-animation.scss */
+.bouncy-slide-top.ng-leave-active, .bouncy-slide-top-show.ng-hide-add.ng-hide-add-active {
   transform: translateY(240px);
   -ms-transform: translateY(240px);
   -webkit-transform: translateY(240px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Bouncy Slide Rigth 
 /* ------------------------------------------- */
-/* line 231, ../sass/ng-animation.scss */
-.bouncy-slide-right.ng-enter {
-  transform: translateX(240px);
-  -ms-transform: translateX(240px);
-  -webkit-transform: translateX(240px);
-  transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
-  opacity: 0;
-}
-
 /* line 237, ../sass/ng-animation.scss */
-.bouncy-slide-right.ng-enter-active {
+.bouncy-slide-right.ng-enter, .bouncy-slide-right-show.ng-hide-remove {
+  transform: translateX(240px);
+  -ms-transform: translateX(240px);
+  -webkit-transform: translateX(240px);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+  display: block !important; }
+
+/* line 244, ../sass/ng-animation.scss */
+.bouncy-slide-right.ng-enter-active, .bouncy-slide-right-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 242, ../sass/ng-animation.scss */
-.bouncy-slide-right.ng-leave {
+/* line 249, ../sass/ng-animation.scss */
+.bouncy-slide-right.ng-leave, .bouncy-slide-right-show.ng-hide-add {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 248, ../sass/ng-animation.scss */
-.bouncy-slide-right.ng-leave-active {
+/* line 255, ../sass/ng-animation.scss */
+.bouncy-slide-right.ng-leave-active, .bouncy-slide-right-show.ng-hide-add.ng-hide-add-active {
   transform: translateX(240px);
   -ms-transform: translateX(240px);
   -webkit-transform: translateX(240px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Bouncy Slide Left 
 /* ------------------------------------------- */
-/* line 258, ../sass/ng-animation.scss */
-.bouncy-slide-left.ng-enter {
+/* line 265, ../sass/ng-animation.scss */
+.bouncy-slide-left.ng-enter, .bouncy-slide-left-show.ng-hide-remove {
   transform: translateX(-240px);
   -ms-transform: translateX(-240px);
   -webkit-transform: translateX(-240px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 264, ../sass/ng-animation.scss */
-.bouncy-slide-left.ng-enter-active {
+/* line 272, ../sass/ng-animation.scss */
+.bouncy-slide-left.ng-enter-active, .bouncy-slide-left-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 269, ../sass/ng-animation.scss */
-.bouncy-slide-left.ng-leave {
+/* line 277, ../sass/ng-animation.scss */
+.bouncy-slide-left.ng-leave, .bouncy-slide-left-show.ng-hide-add {
   transform: translateX(0);
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 275, ../sass/ng-animation.scss */
-.bouncy-slide-left.ng-leave-active {
+/* line 283, ../sass/ng-animation.scss */
+.bouncy-slide-left.ng-leave-active, .bouncy-slide-left-show.ng-hide-add.ng-hide-add-active {
   transform: translateX(-240px);
   -ms-transform: translateX(-240px);
   -webkit-transform: translateX(-240px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Bouncy Slide Down
 /* ------------------------------------------- */
-/* line 284, ../sass/ng-animation.scss */
-.bouncy-slide-down.ng-enter {
+/* line 292, ../sass/ng-animation.scss */
+.bouncy-slide-down.ng-enter, .bouncy-slide-down-show.ng-hide-remove {
   transform: translateY(-240px);
   -ms-transform: translateY(-240px);
   -webkit-transform: translateY(-240px);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 290, ../sass/ng-animation.scss */
-.bouncy-slide-down.ng-enter-active {
+/* line 299, ../sass/ng-animation.scss */
+.bouncy-slide-down.ng-enter-active, .bouncy-slide-down-show.ng-hide-remove.ng-hide-remove-active {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 295, ../sass/ng-animation.scss */
-.bouncy-slide-down.ng-leave {
+/* line 304, ../sass/ng-animation.scss */
+.bouncy-slide-down.ng-leave, .bouncy-slide-down-show.ng-hide-add {
   transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 301, ../sass/ng-animation.scss */
-.bouncy-slide-down.ng-leave-active {
+/* line 310, ../sass/ng-animation.scss */
+.bouncy-slide-down.ng-leave-active, .bouncy-slide-down-show.ng-hide-add.ng-hide-add-active {
   transform: translateY(-240px);
   -ms-transform: translateY(-240px);
   -webkit-transform: translateY(-240px);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Scale Fade 
 /* ------------------------------------------- */
-/* line 312, ../sass/ng-animation.scss */
-.scale-fade {
+/* line 321, ../sass/ng-animation.scss */
+.scale-fade, .scale-fade-show {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -408,50 +378,46 @@
   -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  /* easeOutQuad */
-}
+  /* easeOutQuad */ }
 
-/* line 316, ../sass/ng-animation.scss */
-.scale-fade.ng-enter {
+/* line 325, ../sass/ng-animation.scss */
+.scale-fade.ng-enter, .scale-fade-show.ng-hide-remove {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
   -webkit-transform: scale(0.7);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 322, ../sass/ng-animation.scss */
-.scale-fade.ng-enter-active {
+/* line 332, ../sass/ng-animation.scss */
+.scale-fade.ng-enter-active, .scale-fade-show.ng-hide-remove.ng-hide-remove-active {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 327, ../sass/ng-animation.scss */
-.scale-fade.ng-leave {
+/* line 337, ../sass/ng-animation.scss */
+.scale-fade.ng-leave, .scale-fade-show.ng-hide-add {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 333, ../sass/ng-animation.scss */
-.scale-fade.ng-leave-active {
+/* line 343, ../sass/ng-animation.scss */
+.scale-fade.ng-leave-active, .scale-fade-show.ng-hide-add.ng-hide-add-active {
   transform: scale(0.7);
   -ms-transform: scale(0.7);
   -webkit-transform: scale(0.7);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Spin Fade 
 /* ------------------------------------------- */
-/* line 342, ../sass/ng-animation.scss */
-.spin-toggle {
+/* line 352, ../sass/ng-animation.scss */
+.spin-toggle, .spin-toggle-show {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -463,50 +429,46 @@
   -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  /* easeOutQuad */
-}
+  /* easeOutQuad */ }
 
-/* line 346, ../sass/ng-animation.scss */
-.spin-toggle.ng-enter {
+/* line 356, ../sass/ng-animation.scss */
+.spin-toggle.ng-enter, .spin-toggle-show.ng-hide-remove {
   transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 352, ../sass/ng-animation.scss */
-.spin-toggle.ng-enter-active {
+/* line 363, ../sass/ng-animation.scss */
+.spin-toggle.ng-enter-active, .spin-toggle-show.ng-hide-remove.ng-hide-remove-active {
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 357, ../sass/ng-animation.scss */
-.spin-toggle.ng-leave {
+/* line 368, ../sass/ng-animation.scss */
+.spin-toggle.ng-leave, .spin-toggle-show.ng-hide-add {
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 363, ../sass/ng-animation.scss */
-.spin-toggle.ng-leave-active {
+/* line 374, ../sass/ng-animation.scss */
+.spin-toggle.ng-leave-active, .spin-toggle-show.ng-hide-add.ng-hide-add-active {
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Scale in Fade 
 /* ------------------------------------------- */
-/* line 373, ../sass/ng-animation.scss */
-.scale-fade-in {
+/* line 384, ../sass/ng-animation.scss */
+.scale-fade-in, .scale-fade-in-show {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -518,50 +480,46 @@
   -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  /* easeOutQuad */
-}
-
-/* line 377, ../sass/ng-animation.scss */
-.scale-fade-in.ng-enter {
-  transform: scale(3);
-  -ms-transform: scale(3);
-  -webkit-transform: scale(3);
-  transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
-  opacity: 0;
-}
-
-/* line 383, ../sass/ng-animation.scss */
-.scale-fade-in.ng-enter-active {
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  opacity: 1;
-}
+  /* easeOutQuad */ }
 
 /* line 388, ../sass/ng-animation.scss */
-.scale-fade-in.ng-leave {
+.scale-fade-in.ng-enter, .scale-fade-in-show.ng-hide-remove {
+  transform: scale(3);
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+  display: block !important; }
+
+/* line 395, ../sass/ng-animation.scss */
+.scale-fade-in.ng-enter-active, .scale-fade-in-show.ng-hide-remove.ng-hide-remove-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1; }
+
+/* line 400, ../sass/ng-animation.scss */
+.scale-fade-in.ng-leave, .scale-fade-in-show.ng-hide-add {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 394, ../sass/ng-animation.scss */
-.scale-fade-in.ng-leave-active {
+/* line 406, ../sass/ng-animation.scss */
+.scale-fade-in.ng-leave-active, .scale-fade-in-show.ng-hide-add.ng-hide-add-active {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Bouncy Scale in Fade 
 /* ------------------------------------------- */
-/* line 404, ../sass/ng-animation.scss */
-.bouncy-scale-in {
+/* line 416, ../sass/ng-animation.scss */
+.bouncy-scale-in, .bouncy-scale-in-show {
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -577,50 +535,46 @@
   -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
-  /* custom */
-}
+  /* custom */ }
 
-/* line 408, ../sass/ng-animation.scss */
-.bouncy-scale-in.ng-enter {
+/* line 420, ../sass/ng-animation.scss */
+.bouncy-scale-in.ng-enter, .bouncy-scale-in-show.ng-hide-remove {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
   transition-duration: 450ms;
   -webkit-transition-duration: 450ms;
   opacity: 0;
-}
+  display: block !important; }
 
-/* line 414, ../sass/ng-animation.scss */
-.bouncy-scale-in.ng-enter-active {
+/* line 427, ../sass/ng-animation.scss */
+.bouncy-scale-in.ng-enter-active, .bouncy-scale-in-show.ng-hide-remove.ng-hide-remove-active {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 419, ../sass/ng-animation.scss */
-.bouncy-scale-in.ng-leave {
+/* line 432, ../sass/ng-animation.scss */
+.bouncy-scale-in.ng-leave, .bouncy-scale-in-show.ng-hide-add {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transition-duration: 450ms;
   -webkit-transition-duration: 450ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 425, ../sass/ng-animation.scss */
-.bouncy-scale-in.ng-leave-active {
+/* line 438, ../sass/ng-animation.scss */
+.bouncy-scale-in.ng-leave-active, .bouncy-scale-in-show.ng-hide-add.ng-hide-add-active {
   transform: scale(3);
   -ms-transform: scale(3);
   -webkit-transform: scale(3);
-  opacity: 0;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Flip In 
 /* ------------------------------------------- */
-/* line 435, ../sass/ng-animation.scss */
-.flip-in {
+/* line 448, ../sass/ng-animation.scss */
+.flip-in, .flip-in-show {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -632,50 +586,46 @@
   -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  /* easeOutQuad */
-}
+  /* easeOutQuad */ }
 
-/* line 439, ../sass/ng-animation.scss */
-.flip-in.ng-enter {
+/* line 452, ../sass/ng-animation.scss */
+.flip-in.ng-enter, .flip-in-show.ng-hide-remove {
   transform: perspective(300px) rotateX(90deg);
   -ms-transform: perspective(300px) rotateX(90deg);
   -webkit-transform: perspective(300px) rotateX(90deg);
   transition-duration: 550ms;
   -webkit-transition-duration: 550ms;
   opacity: 0.7;
-}
+  display: block !important; }
 
-/* line 445, ../sass/ng-animation.scss */
-.flip-in.ng-enter-active {
+/* line 459, ../sass/ng-animation.scss */
+.flip-in.ng-enter-active, .flip-in-show.ng-hide-remove.ng-hide-remove-active {
   transform: perspective(300px) rotateX(0deg);
   -ms-transform: perspective(300px) rotateX(0deg);
   -webkit-transform: perspective(300px) rotateX(0deg);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 450, ../sass/ng-animation.scss */
-.flip-in.ng-leave {
+/* line 464, ../sass/ng-animation.scss */
+.flip-in.ng-leave, .flip-in-show.ng-hide-add {
   transform: perspective(300px) rotateX(0deg);
   -ms-transform: perspective(300px) rotateX(0deg);
   -webkit-transform: perspective(300px) rotateX(0deg);
   transition-duration: 550ms;
   -webkit-transition-duration: 550ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 456, ../sass/ng-animation.scss */
-.flip-in.ng-leave-active {
+/* line 470, ../sass/ng-animation.scss */
+.flip-in.ng-leave-active, .flip-in-show.ng-hide-add.ng-hide-add-active {
   transform: perspective(300px) rotateX(135deg);
   -ms-transform: perspective(300px) rotateX(135deg);
   -webkit-transform: perspective(300px) rotateX(135deg);
-  opacity: 0.7;
-}
+  opacity: 0; }
 
 /* ------------------------------------------- */
 /* Rotate In 
 /* ------------------------------------------- */
-/* line 465, ../sass/ng-animation.scss */
-.rotate-in {
+/* line 479, ../sass/ng-animation.scss */
+.rotate-in, .rotate-in-show {
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
   -webkit-transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -691,41 +641,37 @@
   -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
-  /* custom */
-}
+  /* custom */ }
 
-/* line 469, ../sass/ng-animation.scss */
-.rotate-in.ng-enter {
+/* line 483, ../sass/ng-animation.scss */
+.rotate-in.ng-enter, .rotate-in-show.ng-hide-remove {
   transform: perspective(300px) rotateY(40deg);
   -ms-transform: perspective(300px) rotateY(40deg);
   -webkit-transform: perspective(300px) rotateY(40deg);
   transition-duration: 550ms;
   -webkit-transition-duration: 550ms;
   opacity: 0.7;
-}
+  display: block !important; }
 
-/* line 475, ../sass/ng-animation.scss */
-.rotate-in.ng-enter-active {
+/* line 490, ../sass/ng-animation.scss */
+.rotate-in.ng-enter-active, .rotate-in-show.ng-hide-remove.ng-hide-remove-active {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
   -webkit-transform: perspective(300px) rotateY(0deg);
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 480, ../sass/ng-animation.scss */
-.rotate-in.ng-leave {
+/* line 495, ../sass/ng-animation.scss */
+.rotate-in.ng-leave, .rotate-in-show.ng-hide-add {
   transform: perspective(300px) rotateY(0deg);
   -ms-transform: perspective(300px) rotateY(0deg);
   -webkit-transform: perspective(300px) rotateY(0deg);
   transition-duration: 550ms;
   -webkit-transition-duration: 550ms;
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 486, ../sass/ng-animation.scss */
-.rotate-in.ng-leave-active {
+/* line 501, ../sass/ng-animation.scss */
+.rotate-in.ng-leave-active, .rotate-in-show.ng-hide-add.ng-hide-add-active {
   transform: perspective(300px) rotateY(-40deg);
   -ms-transform: perspective(300px) rotateY(-40deg);
   -webkit-transform: perspective(300px) rotateY(-40deg);
-  opacity: 0.7;
-}
+  opacity: 0.7; }
