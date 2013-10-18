@@ -1,5 +1,6 @@
 ##Change Log##
 
+- 2013/10/18 : Support `ng-show`, `ng-hide` feature.
 - 2013/10/17 : Fix the problems in `angularjs 1.2.0-rc.3`.
 
 ##About ngAnimate##
