@@ -1,0 +1,835 @@
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+/* ------------------------------------------- */
+/* Mixins
+/* ------------------------------------------- */
+
+@mixin transitionDuration($duration) {
+    @include transition-duration($duration);
+}
+
+@mixin easingTimingFunction() {
+    @include single-transition(all, 0, cubic-bezier(0.25, 0.46, 0.45, 0.94));
+    @include transition-timing-function(cubic-bezier(0.25, 0.46, 0.45, 0.94)); 
+}
+
+@mixin bouncyTimingFunction() {
+    @include single-transition(all, 0, cubic-bezier(0.175, 0.885, 0.32, 1));
+    @include transition-timing-function(cubic-bezier(0.175, 0.885, 0.32, 1)); 
+}
+
+@mixin easingOutQuadTimingFunction() {
+    @include single-transition(all, 0, cubic-bezier(0.25, 0.46, 0.45, 0.94));
+    @include transition-timing-function(cubic-bezier(0.25, 0.46, 0.45, 0.94)); 
+}
+
+@mixin transformValue($value) {
+    @include transform($value); 
+}
+
+/* ------------------------------------------- */
+/* Toggle Fade  
+/* ------------------------------------------- */
+
+.toggle {
+    @include easingTimingFunction();
+    &.ng-enter {
+        opacity: 0;
+        @include transitionDuration(250ms);
+    }
+
+    &.ng-enter-active {
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        opacity: 1;
+        @include transitionDuration(250ms);
+    }
+
+    &.ng-leave-active {
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        opacity:1;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Slide Top 
+/* ------------------------------------------- */
+
+.slide-top {
+    @include easingTimingFunction();
+    &.ng-enter {
+        @include transformValue(translateY(60px)); 
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateY(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateY(60px)); 
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateY(60px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateY(60px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateY(0));
+        opacity:1;
+    }
+}
+
+
+
+/* ------------------------------------------- */
+/* Slide Rigth 
+/* ------------------------------------------- */
+
+.slide-right {
+    @include easingTimingFunction();
+    &.ng-enter {
+        @include transformValue(translateX(60px)); 
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateX(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateX(60px)); 
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateX(60px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateX(60px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateX(0));
+        opacity:1;
+    }
+}
+
+
+
+/* ------------------------------------------- */
+/* Slide Left 
+/* ------------------------------------------- */
+
+.slide-left {
+    @include easingTimingFunction();
+    &.ng-enter {
+        @include transformValue(translateX(-60px));
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateX(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateX(-60px));
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateX(-60px));
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateX(-60px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateX(0));
+        opacity:1;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Slide Down
+/* ------------------------------------------- */
+
+.slide-down {
+    @include easingTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(translateY(-60px)); 
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateY(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateY(-60px)); 
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateY(-60px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateY(-60px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateY(0));
+        opacity:1;
+    }
+    
+}
+
+
+/* ------------------------------------------- */
+/* Bouncy Slide Top 
+/* ------------------------------------------- */
+
+.bouncy-slide-top {
+    @include bouncyTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(translateY(240px));
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateY(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateY(240px)); 
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateY(240px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateY(240px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateY(0));
+        opacity:1;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Bouncy Slide Rigth 
+/* ------------------------------------------- */
+
+.bouncy-slide-right {
+    @include bouncyTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(translateX(240px)); 
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateX(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateX(240px));
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateX(240px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateX(240px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateX(0));
+        opacity:1;
+    }
+}
+
+
+
+/* ------------------------------------------- */
+/* Bouncy Slide Left 
+/* ------------------------------------------- */
+
+.bouncy-slide-left {
+    @include bouncyTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(translateX(-240px));
+        @include transitionDuration(250ms);
+        opacity: 0; 
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateX(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateX(-240px));
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateX(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateX(-240px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateX(-240px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateX(0));
+        opacity:1;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Bouncy Slide Down
+/* ------------------------------------------- */
+
+.bouncy-slide-down {
+    @include bouncyTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(translateY(-240px));
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(translateY(0));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(translateY(-240px));
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(translateY(0));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(translateY(-240px)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(translateY(-240px)); 
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(translateY(0));
+        opacity:1;
+    }
+}
+
+
+
+
+/* ------------------------------------------- */
+/* Scale Fade 
+/* ------------------------------------------- */
+
+.scale-fade {
+    @include easingTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(scale(0.7));
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(scale(1));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(scale(1));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(scale(0.7)); 
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(scale(1));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(scale(0.7)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(scale(0.7));
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(scale(1));
+        opacity:1;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Spin Fade 
+/* ------------------------------------------- */
+
+.spin-toggle {
+    @include easingTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(rotate(225deg));
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(rotate(0deg));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(rotate(0deg));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(rotate(90deg)); 
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(rotate(0deg));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(rotate(90deg)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(rotate(225deg));
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(rotate(0deg));
+        opacity:1;
+    }
+}
+
+
+
+/* ------------------------------------------- */
+/* Scale in Fade 
+/* ------------------------------------------- */
+
+.scale-fade-in {
+    @include easingOutQuadTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(scale(3));
+        @include transitionDuration(250ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(scale(1));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(scale(1));
+        @include transitionDuration(250ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(scale(3));
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(scale(1));
+        @include transitionDuration(250ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(scale(3));
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(scale(3));
+        @include transitionDuration(250ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(scale(1));
+        opacity:1;
+    }
+}
+
+
+
+/* ------------------------------------------- */
+/* Bouncy Scale in Fade 
+/* ------------------------------------------- */
+
+.bouncy-scale-in {
+    @include bouncyTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(scale(3));
+        @include transitionDuration(450ms);
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(scale(1));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(scale(1));
+        @include transitionDuration(450ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(scale(3));
+        opacity: 0; 
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(scale(1));
+        @include transitionDuration(450ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(scale(3));
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(scale(3));
+        @include transitionDuration(450ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(scale(1));
+        opacity:1;
+    }
+}
+
+
+
+/* ------------------------------------------- */
+/* Flip In 
+/* ------------------------------------------- */
+
+.flip-in {
+    @include easingTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(perspective(300px) rotateX(90deg));
+        @include transitionDuration(550ms);
+        opacity: 0.7;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(perspective(300px) rotateX(0deg));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(perspective(300px) rotateX(0deg));
+        @include transitionDuration(550ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(perspective(300px) rotateX(135deg)); 
+        opacity: 0.7;   
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(perspective(300px) rotateX(0deg));
+        @include transitionDuration(550ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(perspective(300px) rotateX(135deg)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(perspective(300px) rotateX(90deg));
+        @include transitionDuration(550ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(perspective(300px) rotateX(0deg));
+        opacity:1;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Rotate In 
+/* ------------------------------------------- */
+
+.rotate-in {
+    @include bouncyTimingFunction();
+
+    &.ng-enter {
+        @include transformValue(perspective(300px) rotateY(40deg));
+        @include transitionDuration(550ms);
+        opacity: 0.7;
+    }
+
+    &.ng-enter-active {
+        @include transformValue(perspective(300px) rotateY(0deg));
+        opacity: 1; 
+    }
+
+    &.ng-leave {
+        @include transformValue(perspective(300px) rotateY(0deg));
+        @include transitionDuration(550ms);
+        opacity: 1;
+    }
+
+    &.ng-leave-active {
+        @include transformValue(perspective(300px) rotateY(-40deg)); 
+        opacity: 0.7;   
+    }
+
+    // Hide
+    &.ng-hide-add {
+        @include transformValue(perspective(300px) rotateY(0deg));
+        @include transitionDuration(550ms);
+        opacity:1;      
+    }   
+    &.ng-hide-add.ng-hide-add-active {
+        @include transformValue(perspective(300px) rotateY(-40deg)); 
+        opacity:0;
+    }
+
+    // Show
+    &.ng-hide-remove {
+        @include transformValue(perspective(300px) rotateY(40deg));
+        @include transitionDuration(550ms);
+        display:block!important;
+        opacity:0;
+    }
+    &.ng-hide-remove.ng-hide-remove-active {
+        @include transformValue(perspective(300px) rotateY(0deg));
+        opacity:1;
+    }
+}
